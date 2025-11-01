@@ -9,7 +9,7 @@ public class Task implements Runnable {
     public void run() {
         System.out.println(Thread.currentThread().getName() + " is running task: " + taskName);
         try {
-            // محاكاة لعمل يستغرق وقتاً قصيراً
+        
             Thread.sleep(150); 
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
